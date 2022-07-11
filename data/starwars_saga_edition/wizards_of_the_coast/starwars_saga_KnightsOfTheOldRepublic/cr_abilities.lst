@@ -1,0 +1,21 @@
+# CVS $Revision: $ $Author: $ -- Thu Jul 10 14:45:53 2014 -- reformated by prettylst.pl v1.51 (build 24365)
+###Block: Soldier Talent Trees
+
+# Armor Specialist Talent Tree
+# Ability Name			Category of Ability	Type									Required Ability						Required Feat		Stackable?	Multiple?	Choose							Selections	Weapon prof. bonus							Source Page
+#Armor Mastery			CATEGORY:Talent		TYPE:SoldierTalent.Talent.ArmorSpecialistTalent		PREABILITY:1,CATEGORY=Talent,Armored Defense																													SOURCEPAGE:p.
+#Armored Defense			CATEGORY:Talent		TYPE:SoldierTalent.Talent.ArmorSpecialistTalent																																						SOURCEPAGE:p.
+#Juggernaut			CATEGORY:Talent		TYPE:SoldierTalent.Talent.ArmorSpecialistTalent		PREABILITY:1,CATEGORY=Talent,Armorer Defense																													SOURCEPAGE:p.
+#Second Skin			CATEGORY:Talent		TYPE:SoldierTalent.Talent.ArmorSpecialistTalent		PREABILITY:1,CATEGORY=Talent,Armorer Defense																													SOURCEPAGE:p.
+
+
+# New Stuff
+# Armor Specialist Talent Tree
+# Ability Name			Category of Ability	Type									Required Ability						Required Feat		Stackable?	Multiple?	Choose							Selections	Weapon prof. bonus							Source Page
+Jet Pack Training			CATEGORY:Talent		TYPE:SoldierTalent.Talent.RocketJumperTalent													SOURCEPAGE:p.	DESC:You can activate a Jet Pack as a Free Action on your turn. You need not make Pilot checks to land safely with a Jet Pack.
+Burning Assault				CATEGORY:Talent		TYPE:SoldierTalent.Talent.RocketJumperTalent		PREABILITY:1,CATEGORY=Talent,Jet Pack Training			DESC:As a Standard Action you can expend one of your Jet Packs charges to make an attack with the Jet Pack, treating it as a Flamethrower. You cannot use this Talent when you are flying. You are considered proficient in the Flamethrower for purposes of making this attack.													SOURCEPAGE:p.
+Improved Trajectory			CATEGORY:Talent		TYPE:SoldierTalent.Talent.RocketJumperTalent		PREABILITY:1,CATEGORY=Talent,Jet Pack Training			DESC:You always use the proper trajectories to maximize the efficiency of your rocket-pack burn rates. You increase your fly Speed by 2 squares when using a Jet Pack.																												SOURCEPAGE:p.
+Jet Pack Withdraw			CATEGORY:Talent		TYPE:SoldierTalent.Talent.RocketJumperTalent		PREABILITY:1,CATEGORY=Talent,Jet Pack Training			DESC:Once per encounter, as a Reaction when an opponent moves adjacent to you, you can expend one charge of your Jet Pack to fly and Move your Speed, or Withdraw.																												SOURCEPAGE:p.
+
+
+Shield Expert			CATEGORY:Talent		TYPE:SoldierTalent.Talent.ArmorSpecialistTalent		PREABILITY:1,CATEGORY=FEAT,Armor Proficiency (Light)		DESC:You are an expert in using Energy Shields for maximum effectiveness. Once per encounter, you can spend a Swift Action to regain 10 points of SR (up to the shield's maximum) on an active Energy Shield.																												SOURCEPAGE:p.

@@ -10,13 +10,20 @@
 # Displays the Alignment and what name to call Hit Points. Commenting out the Alignment tag removes it from the GUI. Example of this use is in MSRD.
 
 #ALIGNMENTNAME:Alignment
+#HPNAME:Hit Points
+#HPABBREV:HP
 
+#ALTHPNAME:
+#ALTHPABBREV:
 
 # AC tags can be used to display AC info by using appropriate name and abbrev.
+# ACNAME: and ACABBREV: are required for proper usage.
 
 #ACNAME:Armor Class
+#ACABBREV:AC
 
 # Whether to allow AutoResizing of Equipment for nonmedium characters in this gamemode
+#ALLOWAUTORESIZE:Y
 
 # Stacking bonuses - What bonuses STACK automatically
 #BONUSSTACKS:Defense.Dodge.Circumstance.NotRanged.NotFlatFooted
@@ -25,6 +32,7 @@
 #misc. currency specific items
 #
 
+#CURRENCYUNIT:Gold
 #CURRENCYUNITABBREV:gp
 
 #
@@ -36,10 +44,20 @@
 
 # The following determine whether some Class-related
 # variables are displayed on the Classes tab.
+# SHOWCLASSDEFENSE: determines whether BONUS:COMBAT|AC|x|TYPE=ClassDefense
 #  value is displayed.
-#
-#
+# DISPLAYVARIABLExTEXT: determines the Label displayed for the variable
+# DISPLAYVARIABLExNAME: determines the variable displayed.
+#  This must match the DEFINE: variable in order to be displayed
+# Up to 3 variables can be displayed in this manner
 
+#SHOWCLASSDEFENSE:No
+#DISPLAYVARIABLE1TEXT:
+#DISPLAYVARIABLE1NAME:
+#DISPLAYVARIABLE2TEXT:
+#DISPLAYVARIABLE2NAME:
+#DISPLAYVARIABLE3TEXT:
+#DISPLAYVARIABLE3NAME:
 
 #
 # Whether or not the game mode displays these tabs
@@ -67,6 +85,7 @@
 # use & for mnemonic, && for & (MENUENTRY only)
 #
 #MENUENTRY:3.5e
+#MENUTOOLTIP:Use 3.5e character creation settings
 #DISPLAYORDER:1
 #ALLOWEDMODES:35e|DnD
 #
@@ -128,6 +147,8 @@
 #BABATTCYC:5
 #BABMINVAL:1
 # Epic stuff
+#BABMAXLVL:20
+#CHECKSMAXLVL:20
 
 #Class Types
 #CLASSTYPE:PC		CRFORMULA:CL		ISMONSTER:NO	XPPENALTY:YES
@@ -189,9 +210,9 @@
 # Number of hands required to wield weapon categories
 #									Object Size difference
 # 											Damage multiplier: hands = multiplier
-#WIELDCATEGORY:Light		HANDS:1		FINESSABLE:Yes		SIZEDIFF:-1
-#WIELDCATEGORY:OneHanded		HANDS:1					SIZEDIFF:0
-#WIELDCATEGORY:TwoHanded		HANDS:2					SIZEDIFF:1
+#WIELDCATEGORY:Light		HANDS:1		FINESSABLE:Yes		SIZEDIFF:-1	DAMAGEMULT:1=1,2=1
+#WIELDCATEGORY:OneHanded		HANDS:1					SIZEDIFF:0	DAMAGEMULT:1=1,2=1.5
+#WIELDCATEGORY:TwoHanded		HANDS:2					SIZEDIFF:1	DAMAGEMULT:2=1.5
 #WIELDCATEGORY:TooSmall		HANDS:999
 #WIELDCATEGORY:TooLarge		HANDS:999
 #WIELDCATEGORY:Unusable		HANDS:999
@@ -218,12 +239,13 @@
 #
 # Wield Category Steps
 #  This is used when figuring bonuses that allow you to wield Larger or Smaller size weapons
+#WCSTEPSFORMULA:EQUIP.SIZE.INT-PC.SIZE.INT
 
-#WIELDCATEGORY:TooSmall		UP:Light|OneHanded|TwoHanded					
+#WIELDCATEGORY:TooSmall		UP:Light|OneHanded|TwoHanded					ZERO:Light
 #WIELDCATEGORY:Light		UP:OneHanded|TwoHanded
 #WIELDCATEGORY:OneHanded		UP:TwoHanded			DOWN:Light
 #WIELDCATEGORY:TwoHanded						DOWN:OneHanded|Light
-#WIELDCATEGORY:TooLarge						DOWN:TwoHanded|OneHanded|Light	
+#WIELDCATEGORY:TooLarge						DOWN:TwoHanded|OneHanded|Light	ZERO:TwoHanded
 
 #
 # Dice rolling methods for character creation

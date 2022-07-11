@@ -1,0 +1,8 @@
+# CVS $Revision: $ $Author: $ -- Thu Jul 10 14:45:53 2014 -- reformated by prettylst.pl v1.51 (build 24365)
+
+
+
+# New Stuff
+# Armor Specialist Talent Tree
+# Ability Name			Category of Ability	Type									Required Ability						Required Feat		Stackable?	Multiple?	Choose							Selections	Weapon prof. bonus							Source Page
+Steadying Position		CATEGORY:FEAT	TYPE:General.Scout.Soldier			PREABILITY:1,CATEGORY=Feat,Careful Shot		DESC:When you are Prone and Aim before making a ranged attack, your target does not benefit from its Dexterity bonus to its Reflex Defense.

@@ -1,0 +1,4 @@
+# CVS $Revision: $ $Author: $ -- Thu Jul  4 11:45:43 2013 -- reformated by prettylst.pl v1.50 (build 20400)
+
+#Unpredictable Talent Tree
+Fade Away		CATEGORY:Talent		TYPE:ScoutTalent.Talent.UpredictableTalenTree								DESC:Once per turn when you are damaged by an enemy's attack, as a Reaction you can move up to half your speed. This movement does not provoke Attacks of Opportunity.															

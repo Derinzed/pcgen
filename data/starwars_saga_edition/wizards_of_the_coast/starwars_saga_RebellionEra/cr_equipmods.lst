@@ -1,0 +1,8 @@
+# CVS $Revision: $ $Author: $ -- Thu Jul  4 11:45:43 2013 -- reformated by prettylst.pl v1.50 (build 20400)
+
+
+###Block: Equipment Upgrades (Weapons)
+Computerized Interface Scope		KEY:ComputerizedInterfaceScope		TYPE:Weapon.Ranged	COST:2000	DESC:This item is a small electrobinocular device, mounted onto a Weapon, that projects a targeting image onto a monocle or helmet display worn by the wielder. Additionally, the computer image projected by the scope can be displayed on a Datapad or transmitted by Comlink to a remote location, allowing others to see what the wielder sees. By using a Computerized Interface Scope, the wielder effectively reduces the Range of the target by one category (To a minimum of Point-Blank Range) when Aiming. The device is otherwise mechanically identical to a Targeting Scope (Standard) and does not stack with a Targeting Scope or with any other device that does not stack with a Targeting Scope.
+
+
+###Block: Equipment Upgrades (Armor)

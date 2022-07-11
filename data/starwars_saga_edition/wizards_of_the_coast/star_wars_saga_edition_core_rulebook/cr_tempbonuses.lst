@@ -1,0 +1,13 @@
+# CVS $Revision: $ $Author: $ -- Thu Jul 10 14:45:53 2014 -- reformated by prettylst.pl v1.51 (build 24365)
+###Block: Granted Weapon Profs
+# Ability Name				Category of Ability		Type			Visible	Automatically Gained Weapon Prof.
+Increase Reflex		KEY:IncreaseReflex	CATEGORY:Internal	TYPE:Temp		TEMPBONUS:ANYPC|SAVE|Reflex|%CHOICE		TEMPVALUE:MIN=1|MAX=10|TITLE=Reflex Increase Value
+Increase Strength		KEY:IncreaseStrength	CATEGORY:Internal	TYPE:Temp		TEMPBONUS:ANYPC|SAVE|Strength|%CHOICE		TEMPVALUE:MIN=1|MAX=10|TITLE=Strength Increase Value
+Force Grip		CATEGORY:Internal	TYPE:Temp	TEMPBONUS:ANYPC|VAR|ForceGripGain|1
+
+Double Attack		CATEGORY:Internal	TYPE:Temp		PREABILITY:1,CATEGORY=FEAT,Double Attack		TEMPBONUS:ANYPC|COMBAT|ATTACKS|1		TEMPBONUS:ANYPC|COMBAT|TOHIT|-5
+Tripple Attack		CATEGORY:Internal	TYPE:Temp		PREABILITY:1,CATEGORY=FEAT,Tripple Attack		TEMPBONUS:ANYPC|COMBAT|ATTACKS|2		TEMPBONUS:ANYPC|COMBAT|TOHIT|-5
+
+Strength In Numbers			CATEGORY:Internal	TYPE:Temp	PREABILITY:1,CATEGORY=Talent,Strength in Numbers		TEMPBONUS:ANYPC|VAR|DamageReductionBonus|2
+
+Shoulder to Shoulder		CATEGORY:Internal	TYPE:Temp	PREABILITY:1,CATEGORY=Talent,Shoulder to Shoulder		TEMPBONUS:ANYPC|HP|CURRENTMAX|HeroicLVL

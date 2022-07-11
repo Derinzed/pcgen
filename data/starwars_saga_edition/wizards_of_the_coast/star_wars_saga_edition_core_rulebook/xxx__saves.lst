@@ -1,0 +1,4 @@
+Fortitude	SORTKEY:1	BONUS:SAVE|Fortitude|CON|TYPE=Ability				BONUS:SAVE|BASE.Fortitude|10	BONUS:SAVE|Fortitude|HeroicLVL|TYPE=Level			DEFINE:FORTITUDEARMOR|0	
+Reflex	SORTKEY:2	BONUS:SAVE|Reflex|min(if(ArmorMaxDexBonus>0,ArmorMaxDexBonus,100),DEX)|TYPE=Ability	BONUS:SAVE|BASE.Reflex|10	BONUS:SAVE|Reflex|HeroicLVL|TYPE=Level		DEFINE:REFLEXARMOR|0
+Will		SORTKEY:3	BONUS:SAVE|Will|WIS|TYPE=Ability					BONUS:SAVE|BASE.Will|10		BONUS:SAVE|Will|HeroicLVL|TYPE=Level			DEFINE:WILLARMOR|0
+Damage Threshold	SORTKEY:1	BONUS:SAVE|Damage Threshold|CON|TYPE=Ability				BONUS:SAVE|BASE.Damage Threshold|10	BONUS:SAVE|Damage Threshold|HeroicLVL|TYPE=Level		DEFINE:DTARMOR|0

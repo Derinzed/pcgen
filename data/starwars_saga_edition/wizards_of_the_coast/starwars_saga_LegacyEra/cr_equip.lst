@@ -1,0 +1,8 @@
+# CVS $Revision: $ $Author: $ -- Thu Jul 10 13:59:32 2014 -- reformated by prettylst.pl v1.51 (build 24365)
+
+###Block: Melee
+# Advanced Melee Weapon
+# Equipment Name			Output Name					Required Proficiency			Type														Alternative Type					Cost		Weight	Critical Hit Multiplier	Critical Hit Range	Alternative Critical	Alternative Critical Range	Damage	Alternative Damage	Modifier	Alternative Modifier	Wield Category	Requires Modification?	Size		Source Page				Weapon prof. bonus				Special Property
+# T
+# Equipment Name					Output Name					Required Weapon Proficiency				Required Armor Proficiency			Type														Alternative Type					Contains	Cost		Weight	AC Penalty Check	Base Quantity	Critical Hit Multiplier	Critical Hit Range	Alternative Critical	Alternative Critical Range	Damage		Alternative Damage	Modifier					Alternative Modifier	Wield Category	Requires Modification?	Size		Source Page		Modify VAR				Weapon prof. bonus				Special Property		Bonus
+Tehk'la Blade							PROFICIENCY:WEAPON|Knife								TYPE:Weapon.Melee.Finesseable.Light.Specific.Slashing.Piercing.Knife											COST:8500	WT:1								CRITMULT:x2			CRITRANGE:1												DAMAGE:2d6						EQMOD:STEEL									WIELD:Light						SIZE:T	SOURCEPAGE:p.

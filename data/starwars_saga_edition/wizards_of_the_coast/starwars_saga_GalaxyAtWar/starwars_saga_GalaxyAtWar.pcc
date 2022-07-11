@@ -1,0 +1,66 @@
+# CVS $Revision$ $Author$ -- Thu Jul  4 11:45:43 2013 -- reformated by prettylst.pl v1.50 (build 20400)
+CAMPAIGN:Star Wars Roleplaying Game Saga Edition Galaxy At War
+GAMEMODE:Starwars_SE
+GENRE:Sci-Fi
+BOOKTYPE:Supplement
+SETTING:Space Opera
+PRECAMPAIGN:1,INCLUDES=Star Wars Roleplaying Game Saga Edition Core Rulebook
+TYPE:Starwars Saga Edition Galaxy At War
+PUBNAMELONG:Wizards of the Coast
+PUBNAMESHORT:WotC
+PUBNAMEWEB:www.wizards.com
+SOURCELONG:Star Wars Saga Edition Galaxy At War
+SOURCESHORT:SWSEGAW
+SOURCEWEB:www.wizards.com
+SOURCEDATE:
+RANK:200707
+ISOGL:NO
+ISLICENSED:NO
+
+COPYRIGHT:Star Wars Saga Edition Copyright 2007, Wizards of the Coast, Inc.
+
+#ALIGNMENT:xxx__align.lst
+#DATACONTROL:cr__datacontrols.lst
+#SAVE:xxx__saves.lst
+#STAT:xxx__stats.lst
+#RACE:*/_universal/races.lst
+
+#ABILITY:cr_abilities.lst
+#ABILITY:cr_abilities.lst
+#CLASS:cr_classes.lst
+EQUIPMENT:cr_equip.lst
+#EQUIPMOD:cr_equipmods.lst
+ABILITY:cr_feats.lst
+#KIT:cr_kits.lst
+#LANGUAGE:cr_languages.lst
+#ARMORPROF:cr_profs_armor.lst
+#WEAPONPROF:cr_profs_weapon.lst
+#RACE:cr_races.lst
+#SKILL:cr_skills.lst
+#TEMPLATE:cr_templates.lst
+
+#Universal tags
+#COMPANIONLIST:Mount|ANY
+#COMPANIONLIST:Follower|ANY
+
+
+#Hidden
+#HIDETYPE:FEAT|AttackOption|ModifyAC
+
+#HIDETYPE:SKILL|Standard
+
+
+
+# DONE
+#
+INFOTEXT:Supports 6.06.07
+# ENTRY DATE: 2015-01 (Unknown)
+# LST MONKEY: Bahamut
+# RELEASE REVIEW #
+# BETA:
+# RELEASE:
+# Built for PCGen Version: 6.04.01
+# Updated to work with version: -
+# MINVER:6.4
+# MINDEVVER:6.04.1
+# COMMENTS:

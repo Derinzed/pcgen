@@ -371,6 +371,12 @@
 		<total>${pcstring('INITIATIVEMOD')}</total>
 		<dex_mod>${pcstring('STAT.1.MOD')}</dex_mod>
 		<misc_mod>${pcstring('INITIATIVEMISC')}</misc_mod>
+		<!-- FOR STAR WARS SAGA -->
+		<SW_misc_mod>${pcstring('SKILLSIT.INITIATIVE.MISC')}</SW_misc_mod>
+		<SW_initiativefeatbonus>${pcstring('VAR.INITIATIVEFEATBONUS.INTVAL')}</SW_initiativefeatbonus>
+		<SW_initiativetotal>${pcstring('VAR.INITIATIVETOTAL.INTVAL')}</SW_initiativetotal>
+		<SW_heroicboost>${pcstring('VAR.HEROICBOOST.INTVAL')}</SW_heroicboost>
+		<!-- END FOR STAR WARS SAGA -->
 		<spell_failure>${pcstring('SPELLFAILURE')}</spell_failure>
 		<check_penalty>${pcstring('ACCHECK')}</check_penalty>
 		<spell_resistance>${pcstring('SR')}</spell_resistance>
@@ -486,6 +492,14 @@
 			<abil_mod>${pcstring('CHECK.${checknum}.STATMOD')}</abil_mod>
 			<feats>${pcstring('CHECK.${checknum}.FEAT')}</feats>
 			<magic_mod>${pcstring('CHECK.${checknum}.MAGIC')}</magic_mod>
+			<!-- FOR STAR WARS SAGA -->
+			<SW_reflexarmor>+${pcstring('VAR.REFLEXARMOR.INTVAL')}</SW_reflexarmor>
+			<SW_reflextotal>${pcvar('CHECK.${checknum}.TOTAL + VAR.REFLEXARMOR')}</SW_reflextotal>
+			<SW_willarmor>+${pcstring('VAR.WILLARMOR.INTVAL')}</SW_willarmor>
+			<SW_willtotal>${pcvar('CHECK.${checknum}.TOTAL + VAR.WILLARMOR')}</SW_willtotal>
+			<SW_fortitudearmor>+${pcstring('VAR.FORTITUDEARMOR.INTVAL')}</SW_fortitudearmor>
+			<SW_fortitudetotal>${pcvar('CHECK.${checknum}.TOTAL + VAR.FORTITUDEARMOR')}</SW_fortitudetotal>
+			<!-- END FOR STAR WARS SAGA -->
 			<misc_mod>${pcstring('CHECK.${checknum}.MISC.NOMAGIC.NOSTAT')}</misc_mod>
 			<misc_w_magic_mod>${pcstring('CHECK.${checknum}.MISC.NOSTAT')}</misc_w_magic_mod>
 			<race>${pcstring('CHECK.${checknum}.RACE')}</race>
@@ -771,7 +785,7 @@
 			</#macro>
 
 	<weapons>
-		<#if (pcvar("VAR.UseMartialArts") > 0)>
+		<#if (pcvar("VAR.UseMartialArts") = 1)>
 		<martialarts>
 			<total>${pcstring('WEAPONH.TOTALHIT')}</total>
 			<#if (pcvar("VAR.MartialArtsBonusDamage") < 0)>
@@ -1495,7 +1509,7 @@
 			<auto>F</auto>
 			<hidden>F</hidden>
 			<virtual>F</virtual>
-			<source>${pcstring('FEAT.VISIBLE.${feat}.SOURCESHORT')}</source>
+			<source>${pcstring('FEAT.VISIBLE.${feat}.SOURCE')}</source>
 		</feat>
 		</@loop>
 
@@ -1527,7 +1541,7 @@
 			<auto>F</auto>
 			<hidden>F</hidden>
 			<virtual>T</virtual>
-			<source>${pcstring('VFEAT.VISIBLE.${feat}.SOURCESHORT')}</source>
+			<source>${pcstring('VFEAT.VISIBLE.${feat}.SOURCE')}</source>
 		</feat>
 		</@loop>
 		<!-- End Virtual Feats -->
@@ -1543,7 +1557,7 @@
 			<auto>F</auto>
 			<hidden>T</hidden>
 			<virtual>F</virtual>
-			<source>${pcstring('FEAT.HIDDEN.${feat}.SOURCESHORT')}</source>
+			<source>${pcstring('FEAT.HIDDEN.${feat}.SOURCE')}</source>
 		</feat>
 		</@loop>
 		<!-- Hidden VFEAT -->
@@ -1558,7 +1572,7 @@
 			<auto>F</auto>
 			<hidden>T</hidden>
 			<virtual>T</virtual>
-			<source>${pcstring('VFEAT.HIDDEN.${feat}.SOURCESHORT')}</source>
+			<source>${pcstring('VFEAT.HIDDEN.${feat}.SOURCE')}</source>
 		</feat>
 		</@loop>
 		<!-- END Hidden VFEAT -->
@@ -1573,7 +1587,7 @@
 			<auto>T</auto>
 			<hidden>T</hidden>
 			<virtual>F</virtual>
-			<source>${pcstring('FEATAUTO.HIDDEN.${feat}.SOURCESHORT')}</source>
+			<source>${pcstring('FEATAUTO.HIDDEN.${feat}.SOURCE')}</source>
 		</feat>
 		</@loop>
 	</feats>
@@ -1645,9 +1659,7 @@
 			<hidden><#if hidden>T<#else>F</#if></hidden>
 			<virtual>${isVirtual}</virtual>
 			<category>${category}</category>
-			<source>
-						${pcstring('${abilityExportToken}.SOURCESHORT')}
-			</source>
+			<source>${pcstring('${abilityExportToken}.SOURCE')}</source>
 		</${nodeName}>
 	</@loop>
 	</#macro>

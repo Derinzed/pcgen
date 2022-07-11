@@ -307,7 +307,9 @@
 		<dodge>|AC.Dodge|</dodge>
 		<dodge_bonus>|AC.Dodge|</dodge_bonus>
 		<class_bonus>|AC.ClassDefense|</class_bonus>
+|IIF(isgamemode("Modern").OR.isgamemode("Darwins_World_2").OR.isgamemode("Sidewinder"))|
 		<equipment_bonus>|AC.Equipment|</equipment_bonus>
+|ENDIF|
 		<misc>|AC.Misc|</misc>
 		<insight>|AC.Insight|</insight>
 		<morale>|AC.Morale|</morale>
@@ -414,6 +416,9 @@
 			<abil_mod>|CHECK.FORTITUDE.STATMOD|</abil_mod>
 			<feats>|CHECK.FORTITUDE.FEATS|</feats>
 			<magic_mod>|CHECK.FORTITUDE.MAGIC|</magic_mod>
+			<!-- FOR STAR WARS SAGA -->
+			<SW_fortitudetotal>|CHECK.FORTITUDE.TOTAL + VAR.FORTITUDEARMOR.INTVAL|</SW_fortitudetotal>
+			<SW_fortitudearmor>|VAR.FORTITUDEARMOR.INTVAL|</SW_fortitudearmor>
 			<misc_mod>|CHECK.FORTITUDE.MISC.NOMAGIC.NOSTAT|</misc_mod>
 			<misc_w_magic_mod>|CHECK.FORTITUDE.MISC.NOSTAT|</misc_w_magic_mod>
 			<race>|CHECK.FORTITUDE.RACE|</race>
@@ -431,6 +436,9 @@
 			<feats>|CHECK.REFLEX.FEATS|</feats>
 			<abil_mod>|CHECK.REFLEX.STATMOD|</abil_mod>
 			<magic_mod>|CHECK.REFLEX.MAGIC|</magic_mod>
+			<!-- FOR STAR WARS SAGA -->
+			<SW_reflextotal>|CHECK.REFLEX.TOTAL + VAR.REFLEXARMOR.INTVAL|</SW_reflextotal>
+			<SW_reflexarmor>|VAR.REFLEXARMOR.INTVAL|</SW_reflexarmor>
 			<misc_mod>|CHECK.REFLEX.MISC.NOMAGIC.NOSTAT|</misc_mod>
 			<misc_w_magic_mod>|CHECK.REFLEX.MISC.NOSTAT|</misc_w_magic_mod>
 			<race>|CHECK.REFLEX.RACE|</race>
@@ -448,6 +456,9 @@
 			<abil_mod>|CHECK.WILL.STATMOD|</abil_mod>
 			<feats>|CHECK.WILL.FEATS|</feats>
 			<magic_mod>|CHECK.WILL.MAGIC|</magic_mod>
+			<!-- FOR STAR WARS SAGA -->
+			<SW_willtotal>|CHECK.WILL.TOTAL + VAR.WILLARMOR.INTVAL|</SW_willtotal>
+			<SW_willarmor>|VAR.WILLARMOR.INTVAL|</SW_willarmor>
 			<misc_mod>|CHECK.WILL.MISC.NOMAGIC.NOSTAT|</misc_mod>
 			<misc_w_magic_mod>|CHECK.WILL.MISC.NOSTAT|</misc_w_magic_mod>
 			<race>|CHECK.WILL.RACE|</race>
@@ -612,10 +623,12 @@ Immune
 |ENDFOR|
 						<!-- Commenting this out (will need a test as well)
 			3.0 uses "Subdual", 3.5 uses "nonlethal".  We'll need a separate node for both.	-->
+|IIF(isgamemode("3e"))|
 |IIF(VAR.Unarmed>0)|
 			<type>(subdual or normal)</type>
 |ELSE|
 			<type>(subdual only)</type>
+|ENDIF|
 |ELSE|
 |IIF(VAR.UnarmedLethal>0)|
 			<type>(lethal or nonlethal)</type>

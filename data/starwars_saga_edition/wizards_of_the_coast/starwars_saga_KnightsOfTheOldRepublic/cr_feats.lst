@@ -1,0 +1,8 @@
+# CVS $Revision: $ $Author: $ -- Thu Jul 10 14:45:53 2014 -- reformated by prettylst.pl v1.51 (build 24365)
+
+
+
+# New Stuff
+# Armor Specialist Talent Tree
+# Ability Name			Category of Ability	Type									Required Ability						Required Feat		Stackable?	Multiple?	Choose							Selections	Weapon prof. bonus							Source Page
+Power Blast		CATEGORY:FEAT	TYPE:General.Soldier				DESC:As a Swift Action, before making an attack roll, you can choose to subtract a number from all ranged attack rolls and add the same number to all ranged damage rolls. This number cannot exceed your Base Attack Bonus. The penalty on attacks and bonus on damage applies until the start of your next turn but you gain no bonus to damage with Area Attacks or when attacking objects or Vehicles with this Feat.

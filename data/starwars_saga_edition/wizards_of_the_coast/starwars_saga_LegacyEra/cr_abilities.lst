@@ -1,0 +1,5 @@
+Lightning Burst		CATEGORY:Special Ability	TYPE:ForcePower.SpecialQuality.DarkSide		DESC:You call upon The Dark Side to cause lightning to arc out from your body, striking adjacent enemies. Make a Use the Force check. Compare the result to each target's Reflex Defense. If the attack hits, the target takes 3d6 points of Force damage and moves -1 step along the Condition Track. If the attack misses, the target takes half damage and does not move along the Condition Track. Special: You may spend a Force Point when you activate this Force Power to increase the damage dealt by +2d6. You can maintain the Lightning Burst Force Power as a Standard Action, provided you haven't moved since activating the Force Power. When you maintain a Lightning Bust, make a new Use the Force check and compare the result to the Reflex Defense of each target in range (As described above).																																																																																													SOURCEPAGE:p.
+
+CATEGORY=Internal|MASTER TEMP ABILITY.MOD	DEFINE:LightningBurstGain|0		ABILITY:Special Ability|AUTOMATIC|Lightning Burst|PREVAREQ:LightningBurstGain,1
+
+#Temp Stuff
